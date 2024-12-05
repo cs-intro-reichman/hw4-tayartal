@@ -72,7 +72,7 @@ public class ArrCharOps {
      */
     public static int indexOf(char[] arr, char ch) {
         // Replace the following statement with your code
-        if (arr == null) {
+        if (arr == null || arr.length == 0) {
             return -1; 
         }
         for (int i = 0; i < arr.length; i++) {
@@ -87,7 +87,7 @@ public class ArrCharOps {
      */
     public static int indexOf(char[] arr, char ch, int fromIndex) {
         // Replace the following statement with your code
-        if (arr == null || fromIndex >= arr.length) {
+        if (arr == null || fromIndex >= arr.length || arr.length == 0) {
             return -1; 
         }
         for (int i = fromIndex; i < arr.length; i++) {
@@ -103,9 +103,10 @@ public class ArrCharOps {
      */
     public static int lastIndexOf(char[] arr, char ch) {
         // Replace the following statement with your code
-        if (arr == null) {
+        if (arr == null || arr.length == 0) {
             return -1; 
         }
+
         for (int i = (arr.length -1) ; i == 0 ; i--) {
             if (arr[i] == ch) {
                 return i ;
@@ -195,6 +196,9 @@ public class ArrCharOps {
     public static int compareTo(String str1, String str2) {
         // Replace the following statement with your code
         if (str1 == null || str2 == null) {
+            return -2; 
+        }
+        if (str1 == "" || str2 == "") {
             return -2; 
         }
         int minLength = Math.min(str1.length(), str2.length());
