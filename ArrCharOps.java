@@ -14,8 +14,8 @@ public class ArrCharOps {
         System.out.println(concat(arr1, arr2));
         System.out.println(subArray(arr2, 2, 9));
         System.out.println(compareTo("abcd", "abcd"));
+        System.out.println(compareTo("abc", "aBc"));
         System.out.println(compareTo("abc", "abcd"));
-        System.out.println(compareTo("abw", "abcd"));
         System.out.println(compareTo("Abcd", "a"));
         System.out.println(compareTo("apple", "banana"));
         System.out.println(compareTo("apple", "applepie"));
@@ -23,6 +23,9 @@ public class ArrCharOps {
         System.out.println(hashCode(arr1));
         System.out.println(hashCode(arr2));
     }
+    //boolean test1 = ArrCharOps.compareTo("abc", "abc") == 0;
+     //   boolean test2 = ArrCharOps.compareTo("abc", "aBc") == 1;
+    //    boolean test3 = ArrCharOps.compareTo("abc", "abcd") == -1;
 
     /** Prints the given array of characters, and moves the cursor to the next line.
      */
