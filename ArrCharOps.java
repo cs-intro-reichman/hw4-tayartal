@@ -5,6 +5,7 @@ public class ArrCharOps {
         String str = "clearly";
         char[] arr1 = {'c','l','e','a','r','l','y'};
         char[] arr2 = {'U','n','d','e','r','s','t', 'o', 'o', 'd'};
+        //char[] arr3 = {'y', 'o', 'u', 'a', }
         System.out.println(str);  // Prints the string
         println(arr1);            // Prints an array of characters
         System.out.println(charAt(arr1,2));      
@@ -107,7 +108,7 @@ public class ArrCharOps {
             return -1; 
         }
 
-        for (int i = (arr.length -1) ; i == 0 ; i--) {
+        for (int i = (arr.length -1) ; i >= 0 ; i--) {
             if (arr[i] == ch) {
                 return i ;
             }
