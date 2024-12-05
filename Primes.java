@@ -27,11 +27,11 @@ public class Primes {
 
         for (int i = 2; i <= n; i++) {
             if (isPrime[i]) {
-                System.out.print(i + " ");
+                System.out.println(i);
                 times++;
             }
         }
-        System.out.println(); // Newline after listing primes
+       
 
         // Calculate percentage of primes
         int percent = (int)(((double) times / n) * 100);
